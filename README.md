@@ -25,7 +25,8 @@ I’m using this repo to:
 - Writing readable code
 - Basic debugging
 - Using GitHub (commits, updates, version control)
-
+- Practicing regex for input validation
+  
 ## Why this repo exists
 
 This is not a finished project — it’s a learning log.  
