@@ -1,3 +1,12 @@
+# Learning file from Coursera - Programming for Everybody
+# Covers:
+# - Reserved words
+# - Program flow
+# - Conditionals
+# - Loops
+# - File handling
+# Notes + examples included for study purposes
+
 """ The first thing we have in every programming language is what's called reserved words.
   IF we use these words they must mean what python expects them to mean. 
   We can'tuse them elsewhere. We can't make up a variable name inport, we can't make a variable name assert, these 
