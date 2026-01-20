@@ -29,3 +29,19 @@ hrs = input("Enter work hours")
 rate = input("Enter rate per hour")
 pay = int(hrs) * float(rate)
 print(f'Pay: {pay}')
+
+hrs = input("Enter hours worked: ")
+h = float(hrs)
+rate = input("Enter rate per hour: ")
+r = float(rate)
+regularhours = 40
+regularpay = regularhours * r
+
+if h > 40:
+    ot = h - regularhours
+    otrate = ot * ( r * 1.5)
+    otpay = regularpay + otrate
+    print(otpay)
+
+    
+   
