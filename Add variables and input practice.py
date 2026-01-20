@@ -30,10 +30,30 @@ rate = input("Enter rate per hour")
 pay = int(hrs) * float(rate)
 print(f'Pay: {pay}')
 
+# Pay with over time being time and half more
 hrs = input("Enter hours worked: ")
 h = float(hrs)
 rate = input("Enter rate per hour: ")
 r = float(rate)
+regularhours = 40
+regularpay = regularhours * r
+
+if h > 40:
+    ot = h - regularhours
+    otrate = ot * ( r * 1.5)
+    otpay = regularpay + otrate
+    print(otpay)
+    
+# same code with the try and except incase the input is not numeric
+hrs = input("Enter hours worked: ")
+rate = input("Enter rate per hour: ")
+try:
+    h = float(hrs)
+    r = float(rate)
+except:
+    print("Error, please enter numeric input")
+    quit()
+
 regularhours = 40
 regularpay = regularhours * r
 
