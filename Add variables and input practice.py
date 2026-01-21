@@ -98,6 +98,30 @@ def computepay(h, r):
 print("Pay", computepay(h, r))
 
     
+# program that reads numbers until user says 'done'
+# Combination of loop with exit mechanisim
+# we have some sanity checking of our input
+# making sure we have some valid input
+# and we catch it and we use continue to loop back up to run 
+# the next iteration of the loop
+# and we have an accumulator patter and the we can use the 
+# accumulated date to print what we want to print
 
+num = 0 # running count
+tot = 0.0 # running total
+while True :
+    sumvalue = input("Enter a number: ")
+    if sumvalue == 'done' :
+        break
+    try:
+        floatvalue = float(sumvalue)
+    except:
+        print("Invalid input")
+        continue
+    #print(fval)
+    num = num + 1 # counter patter
+    tot = tot + floatvalue # accumulating patter where we are adding a value to it
+# print('ALL DONE')
+print(tot, num, tot / num)
     
    
