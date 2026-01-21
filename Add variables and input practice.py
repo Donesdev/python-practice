@@ -78,6 +78,25 @@ elif scoree < 0.6:
     print("F")
 else:
     print("Enter numeric input between 0.0 and 1.0")
+
+# Computepay with functions and return 
+hrs = input("Enter Hours:")
+h = float(hrs)
+rate = input("Enter rate per hour:" )
+r = float(rate)
+normalh = 40
+normalpay = float(normalh) * float(r)
+def computepay(h, r):
+    if h > normalh:
+        ot = h - normalh
+        normalpay = normalh * r
+        otpay = ot * r * 1.5
+        return normalpay + otpay
+    return h * r
+ 
+#No newline at end of file
+print("Pay", computepay(h, r))
+
     
 
     
