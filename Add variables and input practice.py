@@ -123,5 +123,45 @@ while True :
     tot = tot + floatvalue # accumulating patter where we are adding a value to it
 # print('ALL DONE')
 print(tot, num, tot / num)
+
+# Start with no numbers seen yet.
+largest = None
+smallest = None
+
+#Start an infinite loop so we can keep asking for input.
+while True:
+   
+    # Ask the user for input and store it as a string.
+    num = input("Enter a number: ")
+
+    # If the user types done, exit the loop.
+    if num == "done":
+        break
+
+    # Try to convert the input string into an integer.
+    try:
+        value = int(num)
+
+        # If conversion fails, print an error and skip to the next loop iteration.
+    except:
+        print("Invalid input")
+        continue
+        print(num)
+
+    # If this is the first valid number, 
+    # or it’s bigger than the current largest, update largest.
+
+    if largest is None or value > largest:
+        largest = value
+
+    # If this is the first valid number, 
+    # or it’s smaller than the current smallest, update smallest.
+    if smallest is None or value < smallest:
+        smallest = value
+
+# After the loop ends, print the largest and smallest numbers found.
+print("Maximum is", largest)
+print("Minimum is", smallest)
+
     
    
